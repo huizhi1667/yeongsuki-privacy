@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>영숙이 개인정보처리방침 · Yeongsuki Privacy Policy</title>
+  <style>
+    :root { color-scheme: light; --paper:#faf7ef; --ink:#181714; --red:#d83b35; --yellow:#f8cc48; --muted:#5c5954; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+    a { color: #a12824; text-underline-offset: 3px; }
+    header, main, footer { width: min(100% - 36px, 760px); margin: auto; }
+    header { padding: 48px 0 24px; }
+    .brand { display: inline-block; transform: rotate(-3deg); color: var(--red); font: 900 42px/1.1 system-ui, sans-serif; letter-spacing: -2px; text-shadow: 2px 2px var(--ink); }
+    h1 { font-size: clamp(30px, 6vw, 46px); line-height: 1.25; letter-spacing: -.04em; margin: 30px 0 12px; }
+    h2 { font-size: 22px; line-height: 1.35; margin: 34px 0 10px; }
+    p, ul { margin: 10px 0; }
+    li { padding-left: 4px; margin: 6px 0; }
+    .summary { background: var(--yellow); border: 2px solid var(--ink); border-radius: 18px; padding: 18px 22px; font-weight: 650; }
+    .meta { color: var(--muted); font-size: 14px; }
+    nav { display: flex; gap: 10px; margin: 24px 0 0; }
+    nav a { border: 2px solid var(--ink); border-radius: 999px; padding: 5px 16px; color: var(--ink); text-decoration: none; font-weight: 700; }
+    nav a:hover, nav a:focus { background: var(--yellow); }
+    section.language { padding: 18px 0 54px; border-top: 2px solid var(--ink); }
+    section.language + section.language { margin-top: 22px; }
+    footer { padding: 0 0 45px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand" aria-label="영숙이">영숙이</div>
+    <h1>개인정보처리방침<br><span lang="en">Privacy Policy</span></h1>
+    <p class="meta">2026년 10월 9일 시행 · Effective October 9, 2026</p>
+    <nav aria-label="Language"><a href="#ko">한국어</a><a href="#en" lang="en">English</a></nav>
+  </header>
+  <main>
+    <section class="language" id="ko" lang="ko">
+      <p class="summary">영숙이의 단어장과 퀴즈 기록은 기기에 저장됩니다. 단어를 검색할 때는 뜻 조회를 위해 검색어가 외부 서비스로 전송됩니다.</p>
+      <h2>1. 처리하는 정보</h2>
+      <ul>
+        <li><strong>기기에만 저장:</strong> 저장한 단어, 뜻, 조회 횟수와 날짜, 퀴즈 결과, 직접 수정한 뜻과 메모, 언어 및 앱 설정. 이 정보는 앱의 SwiftData·기기 설정 저장소에 보관되며 영숙이 서버의 개인 단어장으로 업로드되지 않습니다.</li>
+        <li><strong>검색 시 전송:</strong> 입력한 단어와 학습 언어가 뜻 조회를 위해 Supabase 서버로 전송됩니다. 서버는 남용 방지를 위해 요청 IP 주소를 확인하고, 비밀키를 이용해 변환한 IP 해시와 요청 횟수를 데이터베이스에 기록합니다. 검색어와 생성된 일반 사전 항목은 서버 캐시에 저장되어 다른 이용자의 동일 검색에도 재사용될 수 있습니다. 개인 메모·퀴즈 기록은 이 캐시에 포함되지 않습니다.</li>
+        <li><strong>앱 무결성 확인이 활성화된 경우:</strong> Apple App Attest의 앱별 키 식별자, 공개키, 검증 정보 및 사용 횟수를 서버에서 처리해 자동화된 남용을 제한합니다.</li>
+      </ul>
+      <h2>2. 사용 목적과 외부 서비스</h2>
+      <ul>
+        <li><strong>Supabase:</strong> 뜻 조회 요청 처리, 사전 결과 캐시 및 남용 방지 기록 보관.</li>
+        <li><strong>OpenAI:</strong> 캐시에 없는 단어의 뜻·뉘앙스·예문 생성. 서버는 검색어와 언어 정보를 전달하며, 앱의 개인 단어장·메모·퀴즈 기록은 전달하지 않습니다.</li>
+        <li><strong>Wikimedia/Wiktionary:</strong> 서버가 캐시에 없는 단어의 사전 등재 여부를 확인합니다. 이용자 IP 주소 대신 서버에서 요청합니다.</li>
+        <li><strong>Free Dictionary API 및 발음 파일 제공처:</strong> 영어 단어의 발음기호·오디오·원어 정의를 얻기 위해 앱이 직접 요청합니다. 직접 연결이므로 해당 서비스는 검색 단어와 일반적인 네트워크 정보(IP 주소 등)를 받을 수 있습니다.</li>
+      </ul>
+      <p>외부 제공자는 자체 정책에 따라 네트워크 로그를 처리할 수 있습니다. 영숙이는 광고 식별자를 사용하거나 광고·제3자 분석 SDK를 포함하지 않습니다. 서비스 제공자의 처리 위치에 따라 정보가 국외에서 처리될 수 있습니다.</p>
+      <h2>3. 보관과 삭제</h2>
+      <ul>
+        <li>기기의 단어 기록은 사용자가 <strong>설정 → 전체 단어 삭제</strong>를 선택하거나 앱을 삭제할 때 제거됩니다. 앱 언어 등 설정은 앱 삭제 시 기기에서 제거됩니다.</li>
+        <li>서버의 공용 단어 캐시는 서비스에 필요한 동안 유지됩니다. 특정 사용자의 검색 이력으로 구성되지 않으며, 공용 사전 항목을 삭제하면 다른 이용자에게도 영향을 줄 수 있습니다.</li>
+        <li>IP 해시 기반 요청 횟수와 앱 무결성 기록은 남용 방지와 서비스 운영에 필요한 동안 보관합니다. 현재 서버에는 자동 만료 기간이 설정되어 있지 않습니다. 관련 정보의 열람·삭제 요청은 아래 이메일로 접수합니다. 식별이 불가능한 기록은 개별 삭제가 제한될 수 있습니다.</li>
+      </ul>
+      <h2>4. 이용자의 선택과 문의</h2>
+      <p>검색 기능을 사용하지 않으면 새로운 검색어가 전송되지 않습니다. 앱의 단어 기록은 설정에서 직접 삭제할 수 있습니다. 서버 정보에 관한 문의·삭제 요청이나 이 방침에 관한 질문은 <a href="mailto:att1667.hj@gmail.com">att1667.hj@gmail.com</a>로 보내 주세요. 계정 기능이 없어 요청 대상 확인에 필요한 정보를 추가로 여쭐 수 있으며, 비밀번호나 결제 정보를 요청하지 않습니다.</p>
+      <h2>5. 변경</h2>
+      <p>처리 방식이 바뀌면 이 페이지의 시행일과 내용을 갱신합니다.</p>
+    </section>
+
+    <section class="language" id="en" lang="en">
+      <p class="summary">Yeongsuki stores your wordbook and quiz history on your device. When you search for a word, the query is sent to external services to retrieve a definition.</p>
+      <h2>1. Information we handle</h2>
+      <ul>
+        <li><strong>Stored on your device only:</strong> saved words, meanings, lookup counts and dates, quiz results, edited meanings and notes, language choices, and app settings. These are stored with SwiftData and device settings; they are not uploaded as a personal wordbook to our server.</li>
+        <li><strong>Sent when you search:</strong> the word and study language are sent to our Supabase service. To limit abuse, the service checks the request IP address and stores a keyed hash of it with a request count. The query and generated general dictionary entry may be cached and reused for the same search by other users. Your notes and quiz history are not included in that cache.</li>
+        <li><strong>When app integrity checks are enabled:</strong> the service processes an Apple App Attest app-specific key identifier, public key, verification data, and usage counts to limit automated abuse.</li>
+      </ul>
+      <h2>2. Purposes and service providers</h2>
+      <ul>
+        <li><strong>Supabase:</strong> handles definition requests, the shared dictionary cache, and abuse prevention records.</li>
+        <li><strong>OpenAI:</strong> generates meanings, nuance, and examples for words absent from the cache. Our server sends the query and language, but does not send your personal wordbook, notes, or quiz history.</li>
+        <li><strong>Wikimedia/Wiktionary:</strong> our server checks whether an uncached word has a dictionary entry. This request comes from our server rather than your device IP address.</li>
+        <li><strong>Free Dictionary API and audio hosts:</strong> the app requests English phonetics, audio, and definitions directly. These providers may receive the searched word and ordinary network information, including your IP address.</li>
+      </ul>
+      <p>Providers may process network logs under their own policies. Yeongsuki does not use an advertising identifier or include advertising or third-party analytics SDKs. Processing may occur in countries where the providers operate.</p>
+      <h2>3. Retention and deletion</h2>
+      <ul>
+        <li>You can remove on-device word records with <strong>Settings → Delete all words</strong> or by deleting the app. App settings are removed from the device when the app is deleted.</li>
+        <li>The shared dictionary cache remains while needed to operate the service. It is not a per-user search history, and deleting a shared entry may affect other users.</li>
+        <li>Hashed-IP request counts and app integrity records are kept as needed to prevent abuse and operate the service. The server currently has no automatic expiration period for these records. Contact us below to request access or deletion. Individual deletion may be limited when a record cannot be linked to you.</li>
+      </ul>
+      <h2>4. Your choices and contact</h2>
+      <p>If you do not use search, no new search query is transmitted. You can delete on-device word records in Settings. For questions or requests about server records, email <a href="mailto:att1667.hj@gmail.com">att1667.hj@gmail.com</a>. Because there are no user accounts, we may need more information to identify a relevant record; we will not ask for passwords or payment details.</p>
+      <h2>5. Changes</h2>
+      <p>We will update this page and its effective date if our data practices change.</p>
+    </section>
+  </main>
+  <footer>© Yeongsuki · WordBank</footer>
+</body>
+</html>
