@@ -50,7 +50,7 @@
         <li><strong>OpenAI:</strong> 캐시에 없는 단어의 뜻·뉘앙스·예문 생성. 서버는 검색어와 언어 정보를 전달하며, 앱의 개인 단어장·메모·퀴즈 기록은 전달하지 않습니다.</li>
         <li><strong>Wikimedia/Wiktionary:</strong> 서버가 캐시에 없는 단어의 사전 등재 여부를 확인합니다. 이용자 IP 주소 대신 서버에서 요청합니다.</li>
         <li><strong>Free Dictionary API 및 발음 파일 제공처:</strong> 영어 단어의 발음기호·오디오·원어 정의를 얻기 위해 앱이 직접 요청합니다. 직접 연결이므로 해당 서비스는 검색 단어와 일반적인 네트워크 정보(IP 주소 등)를 받을 수 있습니다.</li>
-        <li><strong>Google AdMob(광고 기능이 켜진 빌드):</strong> 단어 목록에 배너 광고를 표시합니다. 광고 SDK는 IP 주소, 기기 관련 식별자, 앱 성능·진단 정보, 광고 조회·상호작용 정보를 처리할 수 있습니다. 개인 단어장·메모·퀴즈 기록은 광고 요청에 포함하지 않습니다. 개발 중인 빌드는 Google의 테스트 광고만 사용합니다.</li>
+        <li><strong>Google AdMob(광고 기능이 켜진 빌드):</strong> 단어 목록과 퀴즈 화면에 배너 광고를 표시합니다. 광고 SDK는 IP 주소, 기기 관련 식별자, 앱 성능·진단 정보, 광고 조회·상호작용 정보를 처리할 수 있습니다. 개인 단어장·메모·퀴즈 기록은 광고 요청에 포함하지 않습니다. 개발 중인 빌드는 Google의 테스트 광고만 사용합니다.</li>
       </ul>
       <p>외부 제공자는 자체 정책에 따라 네트워크 로그를 처리할 수 있습니다. 광고 기능이 켜진 경우에는 필요한 지역에서 광고 동의 안내와 설정의 광고 개인정보 선택을 제공합니다. 서비스 제공자의 처리 위치에 따라 정보가 국외에서 처리될 수 있습니다.</p>
       <h2>3. 보관과 삭제</h2>
@@ -79,7 +79,7 @@
         <li><strong>OpenAI:</strong> generates meanings, nuance, and examples for words absent from the cache. Our server sends the query and language, but does not send your personal wordbook, notes, or quiz history.</li>
         <li><strong>Wikimedia/Wiktionary:</strong> our server checks whether an uncached word has a dictionary entry. This request comes from our server rather than your device IP address.</li>
         <li><strong>Free Dictionary API and audio hosts:</strong> the app requests English phonetics, audio, and definitions directly. These providers may receive the searched word and ordinary network information, including your IP address.</li>
-        <li><strong>Google AdMob (builds with ads enabled):</strong> displays a banner in the word list. The ad SDK may process IP addresses, device-related identifiers, app performance and diagnostic data, and ad views and interactions. Your personal wordbook, notes, and quiz results are not included in ad requests. Development builds use Google's test ads only.</li>
+        <li><strong>Google AdMob (builds with ads enabled):</strong> displays banners in the word list and quiz. The ad SDK may process IP addresses, device-related identifiers, app performance and diagnostic data, and ad views and interactions. Your personal wordbook, notes, and quiz results are not included in ad requests. Development builds use Google's test ads only.</li>
       </ul>
       <p>Providers may process network logs under their own policies. When ads are enabled, the app provides consent messages where required and an ad privacy choices entry in Settings where applicable. Processing may occur in countries where the providers operate.</p>
       <h2>3. Retention and deletion</h2>
